@@ -9,3 +9,6 @@ x2<-barplot(height=baltcitymary.emissions$Emissions/1000, names.arg=baltcitymary
 
 ## Add text at top of bars
 text(x = x2, y = round(baltcitymary.emissions$Emissions/1000,2), label = round(baltcitymary.emissions$Emissions/1000,2), pos = 3, cex = 0.8, col = "black")
+
+dev.copy(png, file="plot2.png", width=480, height=480)
+dev.off()
