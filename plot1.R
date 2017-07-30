@@ -10,3 +10,6 @@ x1<-barplot(height=total.emissions$Emissions/1000, names.arg=total.emissions$yea
 
 ## Add text at top of bars
 text(x = x1, y = round(total.emissions$Emissions/1000,2), label = round(total.emissions$Emissions/1000,2), pos = 3, cex = 0.8, col = "black")
+
+dev.copy(png, file="plot1.png", width=480, height=480)
+dev.off()
