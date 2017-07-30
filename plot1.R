@@ -1,3 +1,7 @@
+## R Code for Plot 1
+# Total Emissions
+# Group total NEI emissions per year:
+
 total.emissions <- summarise(group_by(NEI, year), Emissions=sum(Emissions))
 clrs <- c("red", "green", "blue", "yellow")
 x1<-barplot(height=total.emissions$Emissions/1000, names.arg=total.emissions$year,
